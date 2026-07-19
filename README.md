@@ -37,9 +37,6 @@ This is an **initial public release** of the original training project.
 
 - The code structure and coding style are kept close to the original implementation.
 - The ICD module has passed a CPU forward/backward smoke test.
-- Python files have been checked for syntax errors.
-- A complete benchmark retraining has not yet been rerun in a clean environment.
-- Historical hyperparameters and result tables are still being verified.
 - The arXiv manuscript and citation information will be added later.
 
 The current ICD integration is intended for the global ViT branch with:
@@ -156,4 +153,4 @@ The repository intentionally excludes:
 
 This project is built on [TransReID](https://github.com/damo-cv/TransReID). Please cite the original TransReID paper and repository when using the upstream training framework.
 
-The upstream MIT license and attribution are retained. See `LICENSE` and `THIRD_PARTY_NOTICES.md` for details.
+The upstream MIT license and attribution are retained. See `LICENSE` for details.
