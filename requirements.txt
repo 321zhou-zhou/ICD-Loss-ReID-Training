@@ -1,0 +1,8 @@
+torch
+torchvision
+timm==0.3.2
+yacs
+opencv-python
+numpy
+scipy
+Pillow
