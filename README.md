@@ -36,7 +36,6 @@ loss = ID_LOSS_WEIGHT * ID_LOSS \
 This is an **initial public release** of the original training project.
 
 - The code structure and coding style are kept close to the original implementation.
-- The ICD module has passed a CPU forward/backward smoke test.
 - The arXiv manuscript and citation information will be added later.
 
 The current ICD integration is intended for the global ViT branch with:
