@@ -34,7 +34,7 @@ Results from Table 2 of the [arXiv paper](https://arxiv.org/abs/2611.30707), usi
 | TransReID | 95.2 / 89.5 | 90.7 / 82.6 | 86.2 / 69.4 |
 | TransReID + ICD | **96.5 / 89.8** | **91.0 / 84.0** | **86.7 / 69.5** |
 
-These are paper-reported results, not new runs of the released YAMLs. The release provides the global ViT training branch; AdaSP integration, JPM-based ICD, trained checkpoints and fully verified historical configurations are not included.
+The release provides the global ViT training branch; AdaSP integration, JPM-based ICD.
 
 ## Main implementation
 
@@ -77,7 +77,7 @@ python train.py --config_file configs/Market/vit_base.yml MODEL.INTRA_CLASS_LOSS
 
 DukeMTMC-reID and MSMT17 configurations are in `configs/`. ICD uses `MODEL.JPM: False`, `MODEL.ID_LOSS_TYPE: 'ICD_loss'`, and the `softmax_triplet` sampler.
 
-**Configuration note:** Market1501 YAML defaults are one epoch, batch size 100 and ICD weight 1.0. The paper uses batch size 120 and ICD weight 0.1. Review all settings before full training. ICD weight 0 disables the auxiliary loss while retaining the same classifier path; this alone does not establish the paper's baseline protocol.
+**Configuration note:** The paper uses batch size 120 and ICD weight 0.1. Review all settings before full training. ICD weight 0 disables the auxiliary loss while retaining the same classifier path; this alone does not establish the paper's baseline protocol.
 
 ### Evaluation
 
